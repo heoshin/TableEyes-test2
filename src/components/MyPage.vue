@@ -1,5 +1,5 @@
 <template>
-  <h1>마이페이지</h1>
+  <h1>MyPage</h1>
 </template>
 
 <script>
