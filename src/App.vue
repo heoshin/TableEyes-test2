@@ -42,12 +42,12 @@ export default {
         case 2:
           if (this.activeMenuIdx == idx) {
             this.gnbCenterButon = !this.gnbCenterButon;
-            if (this.gnbCenterButon) {
-              this.$router.push('/Home');
-            }
-            else {
-              this.$router.push('/StoreList');
-            }
+          }
+          if (this.gnbCenterButon) {
+            this.$router.push('/Home');
+          }
+          else {
+            this.$router.push('/StoreList');
           }
           break;
         case 3:
