@@ -1,4 +1,4 @@
-<template> 
+<template>
 <div>
 <!-- 매장 기본 정보란 -->
   <div class="mainStoreImg">
