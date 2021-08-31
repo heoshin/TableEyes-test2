@@ -32,7 +32,6 @@ export default {
   },
   methods : {
     OnClickGNB(idx) {
-      this.activeMenuIdx = idx;
       switch(idx) {
         case 0:
           this.$router.push('/search');
@@ -41,12 +40,14 @@ export default {
           this.$router.push('/wishList');
           break;
         case 2:
-          this.gnbCenterButon = !this.gnbCenterButon;
-          if (this.gnbCenterButon) {
-            this.$router.push('/Home');
-          }
-          else {
-            this.$router.push('/StoreList');
+          if (this.activeMenuIdx == idx) {
+            this.gnbCenterButon = !this.gnbCenterButon;
+            if (this.gnbCenterButon) {
+              this.$router.push('/Home');
+            }
+            else {
+              this.$router.push('/StoreList');
+            }
           }
           break;
         case 3:
@@ -56,6 +57,7 @@ export default {
           this.$router.push('/myPage');
           break;
       }
+      this.activeMenuIdx = idx;
     }
   },
   mounted() {
