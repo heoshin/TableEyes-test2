@@ -1,20 +1,20 @@
 <template>
   <router-view></router-view>
-  
+
   <div class="gnb">
-    <div @click="$router.push('/search'), activeIdx = 0" :class="{ active: activeIdx == 0}">
+    <div @click="OnClickGNB(0)" :class="{ active: activeMenuIdx == 0}">
       <span>검색</span>
     </div>
-    <div @click="$router.push('/wishList'), activeIdx = 1" :class="{ active: activeIdx == 1}">
+    <div @click="OnClickGNB(1)" :class="{ active: activeMenuIdx == 1}">
       <span>찜</span>
     </div>
-    <div @click="$router.push('/Home'), activeIdx = 2" :class="{ active: activeIdx == 2}">
+    <div @click="OnClickGNB(2)" :class="{ active: activeMenuIdx == 2}">
       <span>홈</span>
     </div>
-    <div @click="$router.push('/history'), activeIdx = 3" :class="{ active: activeIdx == 3}">
+    <div @click="OnClickGNB(3)" :class="{ active: activeMenuIdx == 3}">
       <span>최근</span>
     </div>
-    <div @click="$router.push('/myPage'), activeIdx = 4" :class="{ active: activeIdx == 4}">
+    <div @click="OnClickGNB(4)" :class="{ active: activeMenuIdx == 4}">
       <span>마이</span>
     </div>
   </div>
@@ -26,11 +26,37 @@ export default {
   name: 'App',
   data() {
     return {
-      activeIdx: 2,
+      activeMenuIdx: 2,
+      gnbCenterButon: false,
     }
   },
   methods : {
-    
+    OnClickGNB(idx) {
+      this.activeMenuIdx = idx;
+      switch(idx) {
+        case 0:
+          this.$router.push('/search');
+          break;
+        case 1:
+          this.$router.push('/wishList');
+          break;
+        case 2:
+          this.gnbCenterButon = !this.gnbCenterButon;
+          if (this.gnbCenterButon) {
+            this.$router.push('/Home');
+          }
+          else {
+            this.$router.push('/StoreList');
+          }
+          break;
+        case 3:
+          this.$router.push('/history');
+          break;
+        case 4:
+          this.$router.push('/myPage');
+          break;
+      }
+    }
   },
   mounted() {
     
