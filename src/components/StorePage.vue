@@ -873,6 +873,7 @@ select {
     padding-left: 20px;
 }
 /* 메인바-리뷰(사용자리뷰-별명(이름)앞 아이콘설정(좋아,싫어)) */
+/* MRT(mainreview-Title) 이름, 날짜, 별점*/
 .MRT-name:before {
     content:"";
     background-image: url("../assets/img/review-sad.png");
@@ -939,7 +940,7 @@ select {
     padding-left: 20px;
     margin-top: 10px;
 }
-
+/* MRR(mainreview-rating) 사진, 세부평점 */
 .MRR-photo {
     float: left;
     width: 169px;
@@ -1007,7 +1008,7 @@ select {
 
     padding: 0px 20px;
 }
-
+/* 리뷰 글 */
 .MRT-text {
     font-family: Roboto;
     font-style: normal;
@@ -1015,7 +1016,7 @@ select {
     font-size: 12px;
     line-height: 20px;
 }
-
+/* 리뷰전체보기 (더보기) */
 .mainreview-plus {
     width: 414px;
     height: 16px;
@@ -1047,7 +1048,7 @@ select {
     margin-right: 15px;
     transform: translateY(10%);
 }
-
+/* MRG(mainreview-goodornot) 좋아요표시*/
 .MRG-num {
     font-family: Roboto;
     font-style: normal;
@@ -1058,7 +1059,8 @@ select {
 
 .MRG-num:before {
     content:"";
-    background-image: url("../assets/img/good.png") ;
+    background-image: url("../assets/img/good.png");
+    background-image: url("../assets/img/bad.png");
     background-size:20px 20px;
     width: 20px;
     height: 20px;
