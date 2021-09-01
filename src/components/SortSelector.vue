@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #bg {
   width: 90%; height: 50px;
   background-color: white;

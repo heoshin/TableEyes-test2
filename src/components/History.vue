@@ -1,5 +1,4 @@
 <template>
-  <h1>최근 zzkdfs</h1>
   <div class="mov-center">
     <header>
       <div class="titl">
@@ -71,7 +70,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
