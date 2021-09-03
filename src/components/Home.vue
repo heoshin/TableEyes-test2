@@ -261,6 +261,8 @@ a {
   width: 414px;
   height: 289px;
   margin-bottom: 10px;
+
+  box-sizing: border-box;
   padding: 0px 20px;
 }
 .base section .choice div {
