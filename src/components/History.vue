@@ -35,7 +35,6 @@
           <div class="content-txt">
             <a href="#" class="text">
               <p id="title">스타벅스</p>
-              <img src="../assets/img/right.png" alt="" />
               <p id="rcrdDate">2021/8/8</p>
             </a>
             <p id="content-adres">부산 해운대구 좌동 순환로 178</p>
@@ -52,7 +51,6 @@
           <div class="content-txt">
             <a href="#" class="text">
               <p id="title">사직야구장</p>
-              <img src="../assets/img/right.png" alt="" />
               <p id="rcrdDate">2021/8/8</p>
             </a>
             <p id="content-adres">부산 동래구 사직동</p>
@@ -89,7 +87,7 @@ a {
 .mov-center {
   width: 374px;
   margin: 0px 20px;
-  padding-top: 20px;
+  padding-top: 46px;
 }
 /* header 영역 */
 header .titl h2 {
@@ -168,9 +166,12 @@ section .content {
   width: 374px;
   height: 167px;
   background-color: #fff;
-  border: 1px solid #818181;
+  border: 0.2px solid rgba(216, 216, 216, 0.99);
   border-radius: 20px;
   margin-top: 10px;
+
+  box-sizing: border-box;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.19);
 }
 
 section .menu button {
@@ -181,6 +182,12 @@ section .menu button {
   border: 1.3px solid #a3a3a3;
   border-radius: 15px;
   cursor: pointer;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+
+  color: #545454;
 }
 
 section .menu .menuAtive {
@@ -206,11 +213,14 @@ section .content .content-box {
 .content-box .content-txt {
   float: left;
   margin-left: 15px;
+  width: 241px;
 }
 /* 가게 주소 */
 .content-txt #content-adres {
   color: #545454;
   font-size: 14px;
+  letter-spacing: -1px;
+  margin-left: 10px;
 }
 
 #content-adres::before {
@@ -227,18 +237,44 @@ section .content .content-box {
 
 .content-box .content-txt .text {
   display: block;
-  border-bottom: 1px solid #c9c9c9;
+  position: relative;
   box-sizing: border-box;
   padding-bottom: 4px;
+  margin-bottom: 4px;
   clear: both;
+}
+.content-box .content-txt .text::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+
+  bottom: 0;
+  left: 5px;
+
+  width: 237px;
+  height: 1px;
+  background-color: #c9c9c9;
 }
 /* 가게 이름 */
 .content-txt .text #title {
   display: inline;
   color: #000;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 500;
 }
+
+.content-txt .text #title::after {
+  content: "";
+  background: url("../assets/img/right.png") no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 24px;
+  display: inline-block;
+
+  margin-left: 10px;
+  transform: translateY(15%);
+}
+
 .content-txt .text img {
   max-width: 10px;
   margin-left: 10px;
@@ -264,8 +300,9 @@ section .content .content-box {
 }
 
 .content .review p {
-  color: #535353;
+  color: #000000;
   font-size: 14px;
   background: url(../assets/img/serch/리뷰아이콘.png) no-repeat top left 120px;
+  background-size: contain;
 }
 </style>
