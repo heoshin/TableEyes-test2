@@ -6,6 +6,7 @@ import StoreList from './components/StoreList.vue'
 import History from './components/History.vue'
 import MyPage from './components/MyPage.vue'
 import StorePage from './components/StorePage.vue'
+import RegisterStore from './components/RegisterStore.vue'
 
 const routes = [
   {
@@ -35,6 +36,10 @@ const routes = [
   {
     path: "/myPage",
     component: MyPage,
+  },
+  {
+    path: "/registerStore",
+    component: RegisterStore,
   },
 ];
 

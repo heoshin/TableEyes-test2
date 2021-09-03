@@ -1,4 +1,6 @@
 <template>
+  <button @click="$router.push('/registerStore');">registerStore</button>
+
   <router-view></router-view>
 
   <div class="gnb">
