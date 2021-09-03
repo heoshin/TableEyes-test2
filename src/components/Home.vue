@@ -32,8 +32,6 @@
             <span></span>
             <p>노래방</p>
           </a>
-        </div>
-        <div>
           <a href="#">
             <span></span>
             <p>스포츠</p>
@@ -263,17 +261,20 @@ a {
   width: 414px;
   height: 289px;
   margin-bottom: 10px;
+  padding: 0px 20px;
 }
 .base section .choice div {
   width: 414px;
   height: 150px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .base section .choice div a {
   color: black;
+  margin-right: 30px;
+  margin-top: 20px;
 }
 .base section .choice div a span {
   display: block;
