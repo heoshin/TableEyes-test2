@@ -121,6 +121,52 @@
       </footer>
     </form>
   </div>
+  <!-- 가게정보페이지-3 -->
+  <!-- <header>
+    <div class="progressBox">
+      <div class="progress-chart">
+        <div class="progress-bar" style="width: 75%"></div>
+      </div>
+      <div class="progressTextBox">
+        <span>1</span><span class="progressFont">/4</span>
+      </div>
+    </div>
+  </header> -->
+  <form>
+    <section>
+      <div class="titleBox">
+        <p class="title">전화번호를 입력해주세요</p>
+      </div>
+      <article class="boxSize">
+        <label class="subTitle">업주전화</label>
+        <input
+          type="text"
+          class="input"
+          placeholder="-없이 입력해주세요"
+          required
+        />
+        <p class="explanation">업주전화를 입력해주세요</p>
+      </article>
+      <article class="boxSize">
+        <label class="subTitle">가게전화</label>
+        <input
+          type="text"
+          class="input"
+          placeholder="-없이 입력해주세요"
+          required
+        />
+        <p class="explanation">가게의 전화를 입력해주세요</p>
+      </article>
+    </section>
+
+    <!-- <footer>
+      <a href="./newStore-2.html" type="submit">
+      <button class="next" onclick="location.href='./newStore-2.html'">
+        다음으로
+      </button>
+      </a>
+    </footer> -->
+  </form>
 </template>
 
 <script>
@@ -142,8 +188,8 @@ a {
 }
 
 section {
-    margin-top: 120px;
-    margin-bottom: 110px;
+  margin-top: 120px;
+  margin-bottom: 110px;
 }
 
 header {
@@ -152,8 +198,7 @@ header {
 
   top: 0;
   left: 0;
-  background-color: #FFF;
-
+  background-color: #fff;
 
   width: 414px;
   height: 97px;
@@ -162,12 +207,12 @@ header {
 }
 
 footer {
-    position: fixed;
+  position: fixed;
 
-    bottom: 0;
-    left: 0;
+  bottom: 0;
+  left: 0;
 
-    background-color: #FFF;
+  background-color: #fff;
 }
 
 header p {
