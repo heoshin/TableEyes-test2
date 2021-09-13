@@ -93,13 +93,13 @@
 </template>
 
 <script>
-function color(num) {
-  const btnColor = document.getElementsByClassName("btncolor")[num];
+// function color(num) {
+//   const btnColor = document.getElementsByClassName("btncolor")[num];
 
-  if (btnColor.style.background != "rgb(248, 234, 255)")
-    return (btnColor.style.background = "#F8EAFF");
-  btnColor.style.background = "";
-}
+//   if (btnColor.style.background != "rgb(248, 234, 255)")
+//     return (btnColor.style.background = "#F8EAFF");
+//   btnColor.style.background = "";
+// }
 </script>
 
 <style scoped>
@@ -123,6 +123,7 @@ header {
   border-bottom: 12px solid #f1f2fa;
 }
 
+/* 필터, 오름차순버튼, 내림차순버튼 정렬 */
 .headerBox {
   display: flex;
   float: left;
@@ -131,6 +132,7 @@ header {
   align-items: flex-end;
 }
 
+/* 큰제목(필터) */
 .Title {
   float: left;
 
@@ -143,11 +145,8 @@ header {
   margin-right: 41px;
 }
 
+/* 오름차순버튼, 내림차순버튼 */
 header div button {
-  float: left;
-
-  display: flex;
-  flex-direction: row;
   padding: 4px 21px;
 
   font-family: Roboto;
@@ -175,12 +174,13 @@ article {
   border-bottom: 1px solid #e0e0f4;
 }
 
+/* 소제목(정렬, 별점, 편의시설 등),버튼 컨테이너 박스*/
 .container {
   box-sizing: border-box;
   padding: 0px 21px;
   padding-bottom: 13px;
 }
-
+/* 소제목 */
 section article p {
   font-family: Roboto;
   font-style: normal;
@@ -191,15 +191,15 @@ section article p {
   margin-top: 23px;
   margin-bottom: 16px;
 }
-
+/* 버튼정렬 */
 .buttonflex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+/* 버튼 */
 section article button {
-  width: 80x;
   height: 24px;
 
   background: #ffffff;
@@ -219,6 +219,7 @@ section article button {
   color: #6f7198;
 }
 
+/* 별점란 별  */
 .Star {
   width: 63px;
 }
