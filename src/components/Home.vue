@@ -27,7 +27,7 @@
           <a href="#">
             <span></span>
             <p>영화</p>
-          </a>
+          </a>  
           <a href="#">
             <span></span>
             <p>노래방</p>
@@ -39,7 +39,7 @@
           <a href="#">
             <span></span>
             <p>pc방</p>
-          </a>
+          </a>   
           <a href="#">
             <span></span>
             <p>보드게임</p>

@@ -1,7 +1,7 @@
 <template>
   <!-- <header>
-    <p>테이블 아이즈</p>
-  </header> -->
+	<p>테이블 아이즈</p>
+</header> -->
 
   <section class="storeMain">
     <article class="information">
@@ -45,8 +45,8 @@
       </div>
     </article>
     <!-- <article class="openStoreButton">
-      <a href="#"><button class="openButton">입점하기</button></a>
-    </article> -->
+		<a href="#"><button class="openButton">입점하기</button></a>
+	</article> -->
   </section>
   <!-- 사업자 정보 페이지 -->
   <div class="BusinessInformationPage">
@@ -79,8 +79,8 @@
       </section>
 
       <!-- <footer>
-        <a href="#"><button type="submit" class="next">등록하기</button></a>
-      </footer> -->
+			<a href="#"><button type="submit" class="next">등록하기</button></a>
+		</footer> -->
     </form>
   </div>
   <!-- 가게정보페이지-1 -->
@@ -121,17 +121,56 @@
       </footer>
     </form>
   </div>
-  <!-- 가게정보페이지-3 -->
+
+  <!-- 가게정보페이지-2 -->
   <!-- <header>
     <div class="progressBox">
       <div class="progress-chart">
-        <div class="progress-bar" style="width: 75%"></div>
+        <div class="progress-bar" style="width: 50%"></div>
       </div>
       <div class="progressTextBox">
-        <span>1</span><span class="progressFont">/4</span>
+        <span>2</span><span class="progressFont">/4</span>
       </div>
     </div>
   </header> -->
+  <form>
+    <section>
+      <div class="titleBox">
+        <p class="title">영업시간 설정</p>
+      </div>
+      <article class="boxSize">
+        <label class="subTitle">오픈시간</label>
+        <input type="text" class="timepicker" />
+        <p class="explanation">가게 오픈시간을 설정해주세요</p>
+      </article>
+      <article class="boxSize">
+        <label class="subTitle">마감시간</label>
+        <input type="text" class="timepicker" />
+        <p class="explanation">가게 마감시간을 설정해주세요</p>
+      </article>
+      <article class="TimeCheckBox">
+        <input type="checkBox" />
+        <label class="TimeCheckFont">익일마감</label>
+        <input type="checkBox" />
+        <label class="TimeCheckFont">24시간영업</label>
+      </article>
+    </section>
+
+    <!-- <footer>
+      <a href="#"><button type="submit" class="next">다음으로</button></a>
+    </footer> -->
+  </form>
+  <!-- 가게정보페이지-3 -->
+  <!-- <header>
+	<div class="progressBox">
+		<div class="progress-chart">
+			<div class="progress-bar" style="width: 75%"></div>
+		</div>
+		<div class="progressTextBox">
+			<span>1</span><span class="progressFont">/4</span>
+		</div>
+	</div>
+</header> -->
   <form>
     <section>
       <div class="titleBox">
@@ -160,17 +199,59 @@
     </section>
 
     <!-- <footer>
-      <a href="./newStore-2.html" type="submit">
-      <button class="next" onclick="location.href='./newStore-2.html'">
-        다음으로
-      </button>
-      </a>
-    </footer> -->
+		<a href="./newStore-2.html" type="submit">
+		<button class="next" onclick="location.href='./newStore-2.html'">
+			다음으로
+		</button>
+		</a>
+	</footer> -->
   </form>
+
+	<!-- 가게정보페이지-4 -->
+
+<!-- 확인하기페이지 -->
+
 </template>
 
 <script>
-export default {};
+// $(document).ready(function () {
+//   $(".timepicker").mdtimepicker();
+// });
+// $(".timepicker").mdtimepicker({
+//   // format of the time value (data-time attribute)
+//   timeFormat: "hh:mm:ss.000",
+
+//   // format of the input value
+//   format: "h:mm tt",
+
+//   // theme of the timepicker
+//   // 'red', 'purple', 'indigo', 'teal', 'green', 'dark'
+//   theme: "green",
+
+//   // determines if input is readonly
+//   readOnly: true,
+
+//   // determines if display value has zero padding for hour value less than 10 (i.e. 05:30 PM); 24-hour format has padding by default
+//   hourPadding: false,
+
+//   // determines if clear button is visible
+//   clearBtn: false,
+// });
+// $(".timepicker")
+//   .mdtimepicker()
+//   .on("timechanged", function (e) {
+//     console.log(e.value);
+//     console.log(e.time);
+//   });
+// // setting the value
+// $(".timepicker").mdtimepicker("setValue", "0:00 PM");
+
+// // calling the `show` and `hide` functions
+// $(".timepicker").mdtimepicker("show");
+// $(".timepicker").mdtimepicker("hide");
+
+// // destroying the timepicker
+// $(".timepicker").mdtimepicker("destroy");
 </script>
 
 <style scoped>
@@ -189,7 +270,7 @@ a {
 
 section {
   margin-top: 120px;
-  margin-bottom: 110px;
+  margin-bottom: 170px;
 }
 
 header {
@@ -480,7 +561,7 @@ header p {
 /* 항목 컨테이너 */
 .boxSize {
   width: 414px;
-  height: 180px;
+  height: 165px;
 
   box-sizing: border-box;
 
@@ -489,12 +570,12 @@ header p {
 }
 /* 각 항목 제목 */
 .subTitle {
-  display: inline-block;
+  display: block;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: -0.3px;
 
   margin-top: 23px;
@@ -528,7 +609,7 @@ input:focus {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
 
   letter-spacing: -1px;
 
@@ -551,7 +632,7 @@ footer a {
   width: 374px;
   height: 70px;
   /* 모든 입력창에 입력이 되어 있으면 
-    background: #BEBEBE;색으로 버튼색이 바껴야함 */
+	background: #BEBEBE;색으로 버튼색이 바껴야함 */
   background: #e1e1e1;
   border-radius: 15px;
 
@@ -567,5 +648,64 @@ footer a {
   letter-spacing: 4.7px;
 
   color: #ffffff;
+}
+
+/* 가게정보페이지-2 */
+.timepicker {
+  width: 374px;
+  height: 58px;
+
+  border: 1px solid #c2c2c2;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.3px;
+
+  padding-left: 19px;
+  padding-right: 26px;
+  margin-top: 14px;
+}
+
+.explanation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+
+  letter-spacing: -1px;
+
+  color: #696969;
+
+  margin-top: 10px;
+}
+
+.TimeCheckBox {
+  width: 414px;
+
+  box-sizing: border-box;
+
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.TimeCheckBox input {
+  margin-right: 13px;
+}
+
+.TimeCheckFont {
+  margin-right: 59px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+
+  letter-spacing: -0.3px;
+
+  color: #353535;
 }
 </style>
